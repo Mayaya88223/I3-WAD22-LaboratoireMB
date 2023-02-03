@@ -1,0 +1,57 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32510.428
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "I3-WAD22-LaboratoireMB-Mariam", "I3-WAD22-LaboratoireMB-Mariam\I3-WAD22-LaboratoireMB-Mariam.sqlproj", "{09DF9E61-CB75-4AC5-BFB2-BE49307576E3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "I3-WAD22-LaboratoireMB-Console", "I3-WAD22-LaboratoireMB-Console\I3-WAD22-LaboratoireMB-Console.csproj", "{77967BD9-B27F-466B-8A9F-7B75D8345C23}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AdopteUnDev_Mariam_ASP", "AdopteUnDev_Mariam\AdopteUnDev_Mariam_ASP.csproj", "{2F9E77A1-5536-45B0-954D-C623D9279BF7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AdopteUnDev_Mariam_DAL", "AdopteUnDev_Mariam_DAL\AdopteUnDev_Mariam_DAL.csproj", "{0B25A7F8-1A7D-4497-AB95-1A35CE792173}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AdopteUnDev_Mariam_COMMON", "AdopteUnDev_Mariam_COMMON\AdopteUnDev_Mariam_COMMON.csproj", "{3EA7A534-DBF5-4DA0-B172-AEEDA57E39D2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdopteUnDev_Mariam_BLL", "AdopteUnDev_Mariam_BLL\AdopteUnDev_Mariam_BLL.csproj", "{55756F22-494B-4F9C-BB2B-C6AAEEE50C5E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{09DF9E61-CB75-4AC5-BFB2-BE49307576E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09DF9E61-CB75-4AC5-BFB2-BE49307576E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09DF9E61-CB75-4AC5-BFB2-BE49307576E3}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{09DF9E61-CB75-4AC5-BFB2-BE49307576E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09DF9E61-CB75-4AC5-BFB2-BE49307576E3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{09DF9E61-CB75-4AC5-BFB2-BE49307576E3}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{77967BD9-B27F-466B-8A9F-7B75D8345C23}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77967BD9-B27F-466B-8A9F-7B75D8345C23}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77967BD9-B27F-466B-8A9F-7B75D8345C23}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77967BD9-B27F-466B-8A9F-7B75D8345C23}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F9E77A1-5536-45B0-954D-C623D9279BF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F9E77A1-5536-45B0-954D-C623D9279BF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F9E77A1-5536-45B0-954D-C623D9279BF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F9E77A1-5536-45B0-954D-C623D9279BF7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0B25A7F8-1A7D-4497-AB95-1A35CE792173}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B25A7F8-1A7D-4497-AB95-1A35CE792173}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B25A7F8-1A7D-4497-AB95-1A35CE792173}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B25A7F8-1A7D-4497-AB95-1A35CE792173}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3EA7A534-DBF5-4DA0-B172-AEEDA57E39D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3EA7A534-DBF5-4DA0-B172-AEEDA57E39D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3EA7A534-DBF5-4DA0-B172-AEEDA57E39D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3EA7A534-DBF5-4DA0-B172-AEEDA57E39D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{55756F22-494B-4F9C-BB2B-C6AAEEE50C5E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55756F22-494B-4F9C-BB2B-C6AAEEE50C5E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55756F22-494B-4F9C-BB2B-C6AAEEE50C5E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55756F22-494B-4F9C-BB2B-C6AAEEE50C5E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F3D76B5A-A28A-4918-968B-3D0D8D8E71EA}
+	EndGlobalSection
+EndGlobal

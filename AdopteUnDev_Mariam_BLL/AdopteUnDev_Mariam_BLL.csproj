@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AdopteUnDev_Mariam_COMMON\AdopteUnDev_Mariam_COMMON.csproj" />
+    <ProjectReference Include="..\AdopteUnDev_Mariam_DAL\AdopteUnDev_Mariam_DAL.csproj" />
+  </ItemGroup>
+
+</Project>
