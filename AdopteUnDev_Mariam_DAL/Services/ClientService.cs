@@ -71,8 +71,8 @@ namespace AdopteUnDev_Mariam_DAL.Services
                     command.Parameters.AddWithValue("firstname", entity.CliFirstName);
                     command.Parameters.AddWithValue("mail", entity.CliMail);
                     command.Parameters.AddWithValue("company", entity.CliCompany);
-                    command.Parameters.AddWithValue("login", entity.CliLogin);
-                    command.Parameters.AddWithValue("password", entity.CliPassword);
+                    command.Parameters.AddWithValue("login", (object)entity.CliLogin ?? DBNull.Value);
+                    command.Parameters.AddWithValue("password", (object)entity.CliPassword ?? DBNull.Value);
                     connection.Open();
                     return (int)command.ExecuteScalar();
                 }
@@ -99,8 +99,8 @@ namespace AdopteUnDev_Mariam_DAL.Services
                     command.Parameters.AddWithValue("firstname", entity.CliFirstName);
                     command.Parameters.AddWithValue("mail", entity.CliMail);
                     command.Parameters.AddWithValue("company", entity.CliCompany);
-                    command.Parameters.AddWithValue("login", entity.CliLogin);
-                    command.Parameters.AddWithValue("password", entity.CliPassword);
+                    command.Parameters.AddWithValue("login", (object)entity.CliLogin ?? DBNull.Value);
+                    command.Parameters.AddWithValue("password", (object)entity.CliPassword ?? DBNull.Value);
                     command.Parameters.AddWithValue("id", id);
                     connection.Open();
                     return command.ExecuteNonQuery() > 0;

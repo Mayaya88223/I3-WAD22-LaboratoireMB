@@ -4,6 +4,12 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 16.0.32510.428
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "I3-WAD22-LaboratoireMB-Mariam", "I3-WAD22-LaboratoireMB-Mariam\I3-WAD22-LaboratoireMB-Mariam.sqlproj", "{09DF9E61-CB75-4AC5-BFB2-BE49307576E3}"
+	ProjectSection(ProjectDependencies) = postProject
+		{55756F22-494B-4F9C-BB2B-C6AAEEE50C5E} = {55756F22-494B-4F9C-BB2B-C6AAEEE50C5E}
+		{3EA7A534-DBF5-4DA0-B172-AEEDA57E39D2} = {3EA7A534-DBF5-4DA0-B172-AEEDA57E39D2}
+		{2F9E77A1-5536-45B0-954D-C623D9279BF7} = {2F9E77A1-5536-45B0-954D-C623D9279BF7}
+		{0B25A7F8-1A7D-4497-AB95-1A35CE792173} = {0B25A7F8-1A7D-4497-AB95-1A35CE792173}
+	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "I3-WAD22-LaboratoireMB-Console", "I3-WAD22-LaboratoireMB-Console\I3-WAD22-LaboratoireMB-Console.csproj", "{77967BD9-B27F-466B-8A9F-7B75D8345C23}"
 EndProject
@@ -13,7 +19,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AdopteUnDev_Mariam_DAL", "A
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AdopteUnDev_Mariam_COMMON", "AdopteUnDev_Mariam_COMMON\AdopteUnDev_Mariam_COMMON.csproj", "{3EA7A534-DBF5-4DA0-B172-AEEDA57E39D2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdopteUnDev_Mariam_BLL", "AdopteUnDev_Mariam_BLL\AdopteUnDev_Mariam_BLL.csproj", "{55756F22-494B-4F9C-BB2B-C6AAEEE50C5E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AdopteUnDev_Mariam_BLL", "AdopteUnDev_Mariam_BLL\AdopteUnDev_Mariam_BLL.csproj", "{55756F22-494B-4F9C-BB2B-C6AAEEE50C5E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

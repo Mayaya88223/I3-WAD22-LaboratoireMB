@@ -1,3 +1,8 @@
+using AdopteUnDev_Mariam_COMMON.Repository;
+using BLLObj = AdopteUnDev_Mariam_BLL.Entities;
+using DALObj = AdopteUnDev_Mariam_DAL.Entities;
+using DALServ = AdopteUnDev_Mariam_DAL.Services;
+using BLLServ = AdopteUnDev_Mariam_BLL.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -25,7 +30,11 @@ namespace AdopteUnDev_Mariam
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
-
+            services.AddScoped < IClientRepository<DALObj.Client, int>, DALServ.ClientService>();
+            services.AddScoped < IClientRepository <BLLObj.Client, int>, BLLServ.ClientService>();
+            services.AddScoped < IDeveloperRepository <DALObj.Developer, int>, DALServ.DeveloperService>();
+            services.AddScoped < IDeveloperRepository <BLLObj.Developer, int>, BLLServ.DeveloperService>();
+       
         }
    
             

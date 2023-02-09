@@ -7,27 +7,27 @@ using System.Threading.Tasks;
 
 namespace AdopteUnDev_Mariam_ASP.Controllers
 {
-    public class DeveloperController : Controller
+    public class DeveloperControler : Controller
     {
-        // GET: DeveloperController
+        // GET: DeveloperControler
         public ActionResult Index()
         {
             return View();
         }
 
-        // GET: DeveloperController/Details/5
+        // GET: DeveloperControler/Details/5
         public ActionResult Details(int id)
         {
             return View();
         }
 
-        // GET: DeveloperController/Create
+        // GET: DeveloperControler/Create
         public ActionResult Create()
         {
             return View();
         }
 
-        // POST: DeveloperController/Create
+        // POST: DeveloperControler/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Create(IFormCollection collection)
@@ -42,13 +42,13 @@ namespace AdopteUnDev_Mariam_ASP.Controllers
             }
         }
 
-        // GET: DeveloperController/Edit/5
+        // GET: DeveloperControler/Edit/5
         public ActionResult Edit(int id)
         {
             return View();
         }
 
-        // POST: DeveloperController/Edit/5
+        // POST: DeveloperControler/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Edit(int id, IFormCollection collection)
@@ -63,13 +63,13 @@ namespace AdopteUnDev_Mariam_ASP.Controllers
             }
         }
 
-        // GET: DeveloperController/Delete/5
+        // GET: DeveloperControler/Delete/5
         public ActionResult Delete(int id)
         {
             return View();
         }
 
-        // POST: DeveloperController/Delete/5
+        // POST: DeveloperControler/Delete/5
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Delete(int id, IFormCollection collection)

@@ -77,12 +77,12 @@ namespace AdopteUnDev_Mariam_DAL.Services
                     command.Parameters.AddWithValue("name", entity.DevName);
                     command.Parameters.AddWithValue("firstname", entity.DevFirstName);
                     command.Parameters.AddWithValue("birthday", entity.DevBirthDate);
-                    command.Parameters.AddWithValue("picture", entity.DevPicture);
+                    command.Parameters.AddWithValue("picture", (object)entity.DevPicture ?? DBNull.Value);
                     command.Parameters.AddWithValue("hourcost", entity.DevHourCost);
                     command.Parameters.AddWithValue("daycost", entity.DevDayCost);
                     command.Parameters.AddWithValue("monthcost", entity.DevMonthCost);
                     command.Parameters.AddWithValue("email", entity.DevMail);
-                    command.Parameters.AddWithValue("categprincipal", entity.DevCategPrincipal);
+                    command.Parameters.AddWithValue("categprincipal", (object)entity.DevCategPrincipal?? DBNull.Value);
                     connection.Open();
                     return (int)command.ExecuteScalar();
                 }
@@ -91,12 +91,51 @@ namespace AdopteUnDev_Mariam_DAL.Services
 
         public bool Update(int id, Developer entity)
         {
-            return false;
+            using (SqlConnection connection = new SqlConnection(_connectionString))
+            {
+                using (SqlCommand command = connection.CreateCommand())
+                {
+                    command.CommandText = @"UPDATE [Developer]
+                                            SET [DevName] = @name, 
+                                                [DevFirstName] = @firstname, 
+                                                [DevBirthDate] = @bithday, 
+                                                [DevPicture] = @picture, 
+                                                [DevHourCost] = @hourcost, 
+                                                [DevDayCost] = @daycost, 
+                                                [DevMonthCost] = @monthcost, 
+                                                [DevMail] = @email, 
+                                                [DevCategPrincipal] = @categprincipal
+                                            WHERE [idDev] = @id";
+                    command.Parameters.AddWithValue("name", entity.DevName);
+                    command.Parameters.AddWithValue("firstname", entity.DevFirstName);
+                    command.Parameters.AddWithValue("birthday", entity.DevBirthDate);
+                    command.Parameters.AddWithValue("picture", (object)entity.DevPicture ?? DBNull.Value);
+                    command.Parameters.AddWithValue("hourcost", entity.DevHourCost);
+                    command.Parameters.AddWithValue("daycost", entity.DevDayCost);
+                    command.Parameters.AddWithValue("monthcost", entity.DevMonthCost);
+                    command.Parameters.AddWithValue("email", entity.DevMail);
+                    command.Parameters.AddWithValue("categprincipal", (object)entity.DevCategPrincipal ?? DBNull.Value);
+                    command.Parameters.AddWithValue("id", entity.idDev);
+                    connection.Open();
+                    return command.ExecuteNonQuery() > 0;
+
+                }
+            }
+           
         }
 
         public bool Delete(int id)
         {
-            return false;
+            using (SqlConnection connection = new SqlConnection(_connectionString))
+            {
+                using (SqlCommand command = connection.CreateCommand())
+                {
+                    command.CommandText = "DELETE FROM [Developer] WHERE [idDev] = @id";
+                    command.Parameters.AddWithValue("id", id);
+                    connection.Open();
+                    return command.ExecuteNonQuery() > 0 ;
+                }
+            }
         }
 
     }

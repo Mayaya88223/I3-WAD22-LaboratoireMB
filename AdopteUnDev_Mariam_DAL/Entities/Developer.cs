@@ -9,7 +9,7 @@ namespace AdopteUnDev_Mariam_DAL.Entities
 {
     public class Developer : IDeveloper
     {
-        public int idDev { get; set;}
+        public int idDev { get; set; }
         public string DevName { get; set; }
         public string DevFirstName { get; set; }
         public DateTime DevBirthDate { get; set; }

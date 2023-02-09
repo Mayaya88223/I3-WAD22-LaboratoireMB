@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using AdopteUnDev_Mariam_BLL.Entities;
+using AdopteUnDev_Mariam_COMMON.Repository;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -9,6 +11,13 @@ namespace AdopteUnDev_Mariam_ASP.Controllers
 {
     public class ClientController : Controller
     {
+        private readonly IClientRepository<ClientController, int> _service;
+
+        public ClientController(IClientRepository<Client, int> service)
+        {
+            _service = (IClientRepository<ClientController, int>)service;
+        }
+
         // GET: ClientController
         public ActionResult Index()
         {

@@ -7,5 +7,6 @@ namespace AdopteUnDev_Mariam_ASP.Models.ClientViewModel
 {
     public class ClientCreateForm
     {
+
     }
 }
